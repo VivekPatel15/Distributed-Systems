@@ -1,4 +1,4 @@
 # Distributed-Systems
-<h1>Distributed Systems coursework</h1>
+<h3>Distributed Systems coursework</h3>
 
-<h3>Coursework in Distributed Systems at DePaul University for MSCS. All code in Java.</h3>
+<p>Coursework in Distributed Systems at DePaul University for MSCS. All code in Java.</p>
