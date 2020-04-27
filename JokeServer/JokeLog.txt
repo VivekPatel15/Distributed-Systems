@@ -1,0 +1,123 @@
+/* 
+I show here that I run 8 jokes in a row, then 8 proverbs, then splitting 2/2/2/2 proverbs/jokes/proverbs/jokes. This shows 3 things: 
+1) jokes and proverbs are independently randomized
+2) jokes and proverb sstates are independently stored
+3) Admin is able to switch the mode and the server can send the current mode's message
+I also have a shut-down command in the Admin client which closes the server. There is also a quit function on both Client and Admin client, but that is borrowed from InetServer code.
+*/
+
+JokeServer:
+In the admin looper thread
+Vivek Patel's JokeServer 1.0 starting up, listening at port 4545 (client) and 5050 (admin).
+
+Sending joke to Vivek 
+Sending joke to Vivek
+Sending joke to Vivek
+Sending joke to Vivek
+Sending joke to Vivek
+Sending joke to Vivek
+Sending joke to Vivek
+Sending joke to Vivek
+Currently telling proverbs.
+Sending proverb to Vivek
+Sending proverb to Vivek
+Sending proverb to Vivek
+Sending proverb to Vivek
+Sending proverb to Vivek
+Sending proverb to Vivek
+Sending proverb to Vivek
+Sending proverb to Vivek
+Sending proverb to Vivek
+Sending proverb to Vivek
+Currently telling jokes.
+Sending joke to Vivek
+Sending joke to Vivek
+Currently telling proverbs.
+Sending proverb to Vivek
+Sending proverb to Vivek
+Currently telling jokes.
+Sending joke to Vivek
+Sending joke to Vivek
+Shutting down due to Admin command.
+
+
+JokeClient:
+Vivek Patel's JokeClient, 1.0.
+
+Using server: localhost, Port: 4545
+What is your name?: Vivek
+Press <enter> for a joke or proverb or input (quit) to end:
+JC Vivek: I invited my girlfriend to go to the gym with me and then I didn't show. I hope she gets the message that we're not working out.
+Press <enter> for a joke or proverb or input (quit) to end:
+JD Vivek: As I handed my dad his 50th birthday card he looked at me with tears in his eyes and said" Y'know one would have been enough."
+Press <enter> for a joke or proverb or input (quit) to end:
+JA Vivek: I hope Elon Musk never gets involved in a scandal. Elongate would be really drawn out.
+Press <enter> for a joke or proverb or input (quit) to end:
+JB Vivek: My girlfriend is like the square root of -100. A solid 10 but also imaginary.
+JOKE CYCLE COMPLETE
+Press <enter> for a joke or proverb or input (quit) to end:
+JB Vivek: My girlfriend is like the square root of -100. A solid 10 but also imaginary.
+Press <enter> for a joke or proverb or input (quit) to end:
+JD Vivek: As I handed my dad his 50th birthday card he looked at me with tears in his eyes and said" Y'know one would have been enough."
+Press <enter> for a joke or proverb or input (quit) to end:
+JC Vivek: I invited my girlfriend to go to the gym with me and then I didn't show. I hope she gets the message that we're not working out.
+Press <enter> for a joke or proverb or input (quit) to end:
+JA Vivek: I hope Elon Musk never gets involved in a scandal. Elongate would be really drawn out.
+JOKE CYCLE COMPLETE
+Press <enter> for a joke or proverb or input (quit) to end:
+PB Vivek: Wise men speak because they have something to say; Fools because they have to say something. -Plato
+Press <enter> for a joke or proverb or input (quit) to end:
+PA Vivek: He who learns but does not think is lost! He who thinks but does not learn is in great danger. -Confucius
+Press <enter> for a joke or proverb or input (quit) to end:
+PD Vivek: Science my lad is made up of mistakes but they are mistakes which it is useful to make because they lead little by little to the truth. -Jules Verne
+Press <enter> for a joke or proverb or input (quit) to end:
+PC Vivek: An eye for an eye only ends up making the whole world blind. -Mahatma Gandhi
+PROVERB CYCLE COMPLETE
+Press <enter> for a joke or proverb or input (quit) to end:
+PB Vivek: Wise men speak because they have something to say; Fools because they have to say something. -Plato
+Press <enter> for a joke or proverb or input (quit) to end:
+PD Vivek: Science my lad is made up of mistakes but they are mistakes which it is useful to make because they lead little by little to the truth. -Jules Verne
+Press <enter> for a joke or proverb or input (quit) to end:
+PC Vivek: An eye for an eye only ends up making the whole world blind. -Mahatma Gandhi
+Press <enter> for a joke or proverb or input (quit) to end:
+PA Vivek: He who learns but does not think is lost! He who thinks but does not learn is in great danger. -Confucius
+PROVERB CYCLE COMPLETE
+Press <enter> for a joke or proverb or input (quit) to end:
+PB Vivek: Wise men speak because they have something to say; Fools because they have to say something. -Plato
+Press <enter> for a joke or proverb or input (quit) to end:
+PD Vivek: Science my lad is made up of mistakes but they are mistakes which it is useful to make because they lead little by little to the truth. -Jules Verne
+Press <enter> for a joke or proverb or input (quit) to end:
+JC Vivek: I invited my girlfriend to go to the gym with me and then I didn't show. I hope she gets the message that we're not working out.
+Press <enter> for a joke or proverb or input (quit) to end:
+JA Vivek: I hope Elon Musk never gets involved in a scandal. Elongate would be really drawn out.
+Press <enter> for a joke or proverb or input (quit) to end:
+PA Vivek: He who learns but does not think is lost! He who thinks but does not learn is in great danger. -Confucius
+Press <enter> for a joke or proverb or input (quit) to end:
+PC Vivek: An eye for an eye only ends up making the whole world blind. -Mahatma Gandhi
+PROVERB CYCLE COMPLETE
+Press <enter> for a joke or proverb or input (quit) to end:
+JB Vivek: My girlfriend is like the square root of -100. A solid 10 but also imaginary.
+Press <enter> for a joke or proverb or input (quit) to end:
+JD Vivek: As I handed my dad his 50th birthday card he looked at me with tears in his eyes and said" Y'know one would have been enough."
+JOKE CYCLE COMPLETE
+Press <enter> for a joke or proverb or input (quit) to end: quit
+Cancelled by user request.
+
+/*
+Output simplified:
+8 jokes in a row: C, D, A, B [COMPLETE], B, D, C, A [COMPLETE]
+8 proverbs in a row: B, A, D, C [COMPLETE], B, D, C, A [COMPLETE]
+2 proverbs, 2 jokes twice (both cycles complete): PB, PD, JC, JA, PA, PC [COMPLETE], JB, JD [COMPLETE]
+*/
+
+JokeClientAdmin:
+Vivek Patel's JokeClientAdmin, 1.0.
+
+Using server: localhost, Port: 5050
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: p
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: j
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: p
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: j
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: s
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: quit
+Cancelled by user request.

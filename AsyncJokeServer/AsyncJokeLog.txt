@@ -1,0 +1,69 @@
+/*
+I show here that I am able to continously type in 2 numbers to be summed together while waiting for the 40 second sleep timer. Most other functionality from the JokeServer assignment is the same, such as the random joke/proverb order and the state of the client.
+*/
+
+//AsyncJokeServer:
+
+In the admin looper thread
+Vivek Patel's AsyncJokeServer 1.0 starting up, listening at port 4545 (client) and 4555 (admin).
+
+Sending joke to Vivek
+Sending joke to Vivek
+Currently telling proverbs.
+Sending proverb to Vivek
+Sending proverb to Vivek
+Shutting down due to Admin command.
+
+
+//AsyncJokeClient:
+ 
+Vivek Patel's AsyncJokeClient, 1.0.
+
+Using server: localhost, Port: 4545
+What is your name?: Vivek
+Press <enter> for a joke or proverb or input (quit) to end: 5 6
+While we wait, please enter 2 numbers separated by a space.: 23 65
+The sum of 23 + 65 is: 88!
+While we wait, please enter 2 numbers separated by a space.: 252 653
+The sum of 252 + 653 is: 905!
+While we wait, please enter 2 numbers separated by a space.: 1542 6589
+The sum of 1542 + 6589 is: 8131!
+While we wait, please enter 2 numbers separated by a space.: 32166 23156
+The sum of 32166 + 23156 is: 55322!
+While we wait, please enter 2 numbers separated by a space.: 12 5
+The sum of 12 + 5 is: 17!
+JB Vivek: My girlfriend is like the square root of -100. A solid 10 but also imaginary.
+Press <enter> for a joke or proverb or input (quit) to end:
+While we wait, please enter 2 numbers separated by a space.: 1456 125
+The sum of 1456 + 125 is: 1581!
+While we wait, please enter 2 numbers separated by a space.: 65 152
+The sum of 65 + 152 is: 217!
+JC Vivek: I invited my girlfriend to go to the gym with me and then I didn't show. I hope she gets the message that we're not working out.
+Press <enter> for a joke or proverb or input (quit) to end:
+While we wait, please enter 2 numbers separated by a space.: 456 4568
+The sum of 456 + 4568 is: 5024!
+While we wait, please enter 2 numbers separated by a space.: 1236 54
+The sum of 1236 + 54 is: 1290!
+While we wait, please enter 2 numbers separated by a space.: 158 812
+The sum of 158 + 812 is: 970!
+While we wait, please enter 2 numbers separated by a space.: 156 352
+The sum of 156 + 352 is: 508!
+PC Vivek: An eye for an eye only ends up making the whole world blind. -Mahatma Gandhi
+Press <enter> for a joke or proverb or input (quit) to end:
+While we wait, please enter 2 numbers separated by a space.: 1531 1561
+The sum of 1531 + 1561 is: 3092!
+While we wait, please enter 2 numbers separated by a space.: 12365 12
+The sum of 12365 + 12 is: 12377!
+PD Vivek: Science my lad is made up of mistakes but they are mistakes which it is useful to make because they lead little by little to the truth. -Jules Verne
+Press <enter> for a joke or proverb or input (quit) to end: quit
+Cancelled by user request.
+
+//AsyncJokeAdminClient: 
+
+Vivek Patel's AsyncJokeAdminClient, 1.0.
+
+Using server: localhost, Port: 4555
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: p
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: s
+Input (j) for joke or (p) for proverb, (quit) to quit the Admin Client, or (s) to shut down the server: quit
+Cancelled by user request.
